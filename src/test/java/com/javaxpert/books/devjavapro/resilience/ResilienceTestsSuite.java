@@ -56,7 +56,6 @@ public class ResilienceTestsSuite {
 
 
     @Test()
-
     void retryShouldBeActivatedWhenCallFails(){
         Supplier<String> supplier = ()-> {
             System.out.println("Supplier invoked");
@@ -69,12 +68,9 @@ public class ResilienceTestsSuite {
  //               .writableStackTraceEnabled(true)
                 .build();
 
-
         Retry retry = Retry.of("retru",cfg);
         Decorators.DecorateSupplier<String> decorateSupplier = Decorators.ofSupplier(supplier)
                 .withRetry(retry);
-
-
         Assertions.assertThrows( RuntimeException.class, ()  -> decorateSupplier.get() );
 
     }
@@ -92,16 +88,38 @@ public class ResilienceTestsSuite {
         };
         RetryConfig cfg = RetryConfig.custom()
                 .retryExceptions(RuntimeException.class)
-                .failAfterMaxAttempts(false)
+                .failAfterMaxAttempts(true)
                 .maxAttempts(10)
-                //               .writableStackTraceEnabled(true)
                 .build();
 
         Retry retry = Retry.of("custom",cfg);
         Decorators.DecorateSupplier<String> decorateSupplier = Decorators.ofSupplier(supplier).withRetry(retry);
         String callResult  = decorateSupplier.get();
-        Assertions.assertTrue(retry.getMetrics().getNumberOfSuccessfulCallsWithRetryAttempt()>0);
+        Assertions.assertTrue(retry.getMetrics().getNumberOfSuccessfulCallsWithRetryAttempt()==1);
+        Assertions.assertEquals("42",callResult);
+    }
 
+    @Test
+    void fallbackShouldBeActivatedAfterMaxRetries(){
+        Supplier<String> supplier = ()-> {
+            System.out.println("Counting Supplier 2 invoked");
+            throw new RuntimeException("Counter os over");
+        };
+
+        RetryConfig cfg = RetryConfig.custom()
+                .retryExceptions(RuntimeException.class)
+                .failAfterMaxAttempts(true)
+                .maxAttempts(10)
+                .build();
+
+        Retry retry = Retry.of("custom",cfg);
+        Decorators.DecorateSupplier<String> decorateSupplier =
+                Decorators.ofSupplier(supplier)
+                        .withRetry(retry)
+                        .withFallback( (s, throwable) -> "Fallback fired")
+                ;
+        String result = decorateSupplier.get();
+        Assertions.assertTrue(result.startsWith("Fallback"));
 
     }
 }

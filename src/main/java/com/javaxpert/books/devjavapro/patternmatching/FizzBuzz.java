@@ -1,12 +1,12 @@
 package com.javaxpert.books.devjavapro.patternmatching;
-
+import static io.vavr.API.$;
+import static io.vavr.API.Case;
+import static io.vavr.API.Match;
+import static io.vavr.Patterns.$Tuple2;
+import static io.vavr.collection.Stream.from;
 
 import io.vavr.Function1;
 import io.vavr.Tuple;
-import static io.vavr.API.*;
-import static io.vavr.API.Case;
-import static io.vavr.collection.Stream.*;
-import static io.vavr.Patterns.*;
 
 /**
  * Fizzbuzz implementation using VAVR pattern matching

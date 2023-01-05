@@ -19,10 +19,8 @@ public class LeapYearChecker {
 
     public boolean isLeapYear(Integer targetYear){
         return Match( targetYear ).of(
-
                 Case(  $(  allOf(rule1,rule2)) ,true ) ,
                 Case( $(),false)
-
         );
 
     }
