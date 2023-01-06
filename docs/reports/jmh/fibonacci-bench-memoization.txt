@@ -1,0 +1,101 @@
+Benchmark                                                             (maxValue)    Mode     Cnt         Score        Error   Units
+ComputeFiboBenchmark.computeFibo                                               5   thrpt       6         0.003 ±      0.001  ops/ns
+ComputeFiboBenchmark.computeFibo                                              10   thrpt       6        ≈ 10⁻⁴               ops/ns
+ComputeFiboBenchmark.computeFibo                                              20   thrpt       6        ≈ 10⁻⁶               ops/ns
+ComputeFiboBenchmark.computeFibo                                              25   thrpt       6        ≈ 10⁻⁷               ops/ns
+ComputeFiboBenchmark.computeFibo                                              30   thrpt       6        ≈ 10⁻⁸               ops/ns
+ComputeFiboBenchmark.computeFiboMemoized                                       5   thrpt       6         0.116 ±      0.001  ops/ns
+ComputeFiboBenchmark.computeFiboMemoized                                      10   thrpt       6         0.116 ±      0.001  ops/ns
+ComputeFiboBenchmark.computeFiboMemoized                                      20   thrpt       6         0.112 ±      0.001  ops/ns
+ComputeFiboBenchmark.computeFiboMemoized                                      25   thrpt       6         0.119 ±      0.002  ops/ns
+ComputeFiboBenchmark.computeFiboMemoized                                      30   thrpt       6         0.115 ±      0.010  ops/ns
+ComputeFiboBenchmark.computeFibo                                               5  sample  339340      1597.360 ±     41.262   ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.00                             5  sample               419.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.50                             5  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.90                             5  sample              1886.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.95                             5  sample              1956.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.99                             5  sample              2792.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.999                            5  sample             15216.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.9999                           5  sample             36368.134                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p1.00                             5  sample           1445888.000                ns/op
+ComputeFiboBenchmark.computeFibo                                              10  sample  271422      6176.768 ±    127.613   ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.00                            10  sample              1816.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.50                            10  sample              5304.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.90                            10  sample              6768.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.95                            10  sample              9008.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.99                            10  sample             12768.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.999                           10  sample             30912.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.9999                          10  sample           1063794.278                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p1.00                            10  sample           1458176.000                ns/op
+ComputeFiboBenchmark.computeFibo                                              20  sample   20029    597090.673 ±   4430.601   ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.00                            20  sample            493056.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.50                            20  sample            535552.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.90                            20  sample            711680.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.95                            20  sample            959488.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.99                            20  sample           1529856.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.999                           20  sample           1957642.240                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.9999                          20  sample           3745812.480                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p1.00                            20  sample           4898816.000                ns/op
+ComputeFiboBenchmark.computeFibo                                              25  sample    1832   6554552.454 ±  70885.942   ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.00                            25  sample           5595136.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.50                            25  sample           6193152.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.90                            25  sample           7962624.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.95                            25  sample           8470528.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.99                            25  sample           9497477.120                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.999                           25  sample          11239817.216                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.9999                          25  sample          12222464.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p1.00                            25  sample          12222464.000                ns/op
+ComputeFiboBenchmark.computeFibo                                              30  sample     168  72753542.095 ± 599195.733   ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.00                            30  sample          68681728.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.50                            30  sample          72220672.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.90                            30  sample          75392614.400                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.95                            30  sample          76355993.600                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.99                            30  sample          82073354.240                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.999                           30  sample          82706432.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p0.9999                          30  sample          82706432.000                ns/op
+ComputeFiboBenchmark.computeFibo:computeFibo·p1.00                            30  sample          82706432.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized                                       5  sample  357996      1167.539 ±      3.889   ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.00             5  sample               419.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.50             5  sample               978.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.90             5  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.95             5  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.99             5  sample              1956.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.999            5  sample             12560.240                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.9999           5  sample             22361.638                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p1.00             5  sample             53376.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized                                      10  sample  244742      1153.076 ±      4.366   ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.00            10  sample               419.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.50            10  sample               978.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.90            10  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.95            10  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.99            10  sample              1954.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.999           10  sample             12288.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.9999          10  sample             18627.290                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p1.00            10  sample             48576.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized                                      20  sample  257411      1147.352 ±      3.974   ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.00            20  sample               419.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.50            20  sample               978.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.90            20  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.95            20  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.99            20  sample              1954.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.999           20  sample             11872.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.9999          20  sample             16288.563                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p1.00            20  sample             26816.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized                                      25  sample  247732      1157.419 ±      4.508   ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.00            25  sample               419.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.50            25  sample               978.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.90            25  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.95            25  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.99            25  sample              1954.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.999           25  sample             12704.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.9999          25  sample             18223.798                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p1.00            25  sample             37696.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized                                      30  sample  247835      1156.666 ±      4.251   ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.00            30  sample               419.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.50            30  sample               978.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.90            30  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.95            30  sample              1466.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.99            30  sample              1954.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.999           30  sample             12432.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p0.9999          30  sample             17600.000                ns/op
+ComputeFiboBenchmark.computeFiboMemoized:computeFiboMemoized·p1.00            30  sample             29472.000                ns/op

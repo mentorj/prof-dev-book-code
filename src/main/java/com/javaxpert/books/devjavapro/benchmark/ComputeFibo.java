@@ -20,11 +20,6 @@ public class ComputeFibo {
                 Case($(),o -> computeFibo(n-1)+ computeFibo(n-2))
         );
     }
-
-    public int computeFiboMemoized(Integer n){
-        Function1<Integer,Integer> target = Function1.of(this::computeFibo);
-        Function1<Integer,Integer> memoized = target.memoized();
-        return memoized.apply(n);
-    }
+    public Function1<Integer,Integer> memoizedeFibo= Function1.of(this::computeFibo).memoized();
 
 }

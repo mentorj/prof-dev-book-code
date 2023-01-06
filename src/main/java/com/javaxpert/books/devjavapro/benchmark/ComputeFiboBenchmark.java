@@ -8,13 +8,16 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import java.util.concurrent.TimeUnit;
 
-@BenchmarkMode({Mode.Throughput,Mode.AverageTime})
-@OutputTimeUnit(TimeUnit.MILLISECONDS)
-//@Fork(value = 2,jvmArgs  ="-Xmx256M")
+@BenchmarkMode({Mode.Throughput,Mode.SampleTime})
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
+@Warmup(iterations = 2, time = 2, timeUnit = TimeUnit.SECONDS)
+@Measurement(iterations = 3, time = 2, timeUnit = TimeUnit.SECONDS)
+@Fork(value = 4,jvmArgs  ="-Xmx256M")
 @State(Scope.Benchmark)
+@Timeout(time = 10,timeUnit = TimeUnit.SECONDS)
 public class ComputeFiboBenchmark {
 
-    @Param(value = "50")
+    @Param({"5","10", "20","25","30" })
     int maxValue;
 
     ComputeFibo fibo;
@@ -43,7 +46,7 @@ public class ComputeFiboBenchmark {
     @Benchmark
     public void computeFiboMemoized(Blackhole hole){
         //for(int i=0;i<maxValue;i++) {
-            hole.consume(fibo.computeFiboMemoized(maxValue));
+            hole.consume(fibo.memoizedeFibo.apply(maxValue));
         //}
     }
 

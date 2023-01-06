@@ -17,14 +17,14 @@ public class ComputeFiboTest {
     @Test
     void fiboMemoizedOneShouldReturnOne(){
         ComputeFibo fibo = new ComputeFibo();
-        assertEquals(1,fibo.computeFiboMemoized(1));
+        assertEquals(1,fibo.memoizedeFibo.apply(1));
     }
 
     @Test
     void checkFiboWith5(){
         ComputeFibo fibo = new ComputeFibo();
         assertEquals(5,fibo.computeFibo(5));
-        assertEquals(5, fibo.computeFiboMemoized(5));
+        assertEquals(5, fibo.memoizedeFibo.apply(5));
     }
 
 }
