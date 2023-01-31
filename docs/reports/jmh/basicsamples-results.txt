@@ -1,0 +1,2674 @@
+/usr/lib/jvm/java-1.17.0-openjdk-amd64/bin/java -javaagent:/home/deadbrain/platform/java/IDE/idea-IC-222.4459.24/lib/idea_rt.jar=38607:/home/deadbrain/platform/java/IDE/idea-IC-222.4459.24/bin -Dfile.encoding=UTF-8 -classpath /home/deadbrain/IdeaProjects/dev-java-professional/target/classes:/home/deadbrain/.m2/repository/io/vavr/vavr/0.10.4/vavr-0.10.4.jar:/home/deadbrain/.m2/repository/io/vavr/vavr-match/0.10.4/vavr-match-0.10.4.jar:/home/deadbrain/.m2/repository/com/pholser/junit-quickcheck-core/1.0/junit-quickcheck-core-1.0.jar:/home/deadbrain/.m2/repository/junit/junit/4.13.1/junit-4.13.1.jar:/home/deadbrain/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/deadbrain/.m2/repository/org/javaruntype/javaruntype/1.3/javaruntype-1.3.jar:/home/deadbrain/.m2/repository/org/antlr/antlr-runtime/3.1.2/antlr-runtime-3.1.2.jar:/home/deadbrain/.m2/repository/ognl/ognl/3.1.12/ognl-3.1.12.jar:/home/deadbrain/.m2/repository/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar:/home/deadbrain/.m2/repository/ru/vyarus/generics-resolver/3.0.1/generics-resolver-3.0.1.jar:/home/deadbrain/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/home/deadbrain/.m2/repository/com/pholser/junit-quickcheck-generators/1.0/junit-quickcheck-generators-1.0.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-all/1.7.1/resilience4j-all-1.7.1.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-ratelimiter/1.7.1/resilience4j-ratelimiter-1.7.1.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-core/1.7.1/resilience4j-core-1.7.1.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-circuitbreaker/1.7.1/resilience4j-circuitbreaker-1.7.1.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-bulkhead/1.7.1/resilience4j-bulkhead-1.7.1.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-retry/1.7.1/resilience4j-retry-1.7.1.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-cache/1.7.1/resilience4j-cache-1.7.1.jar:/home/deadbrain/.m2/repository/javax/cache/cache-api/1.1.0/cache-api-1.1.0.jar:/home/deadbrain/.m2/repository/io/github/resilience4j/resilience4j-timelimiter/1.7.1/resilience4j-timelimiter-1.7.1.jar:/home/deadbrain/.m2/repository/org/openjdk/jmh/jmh-core/1.35/jmh-core-1.35.jar:/home/deadbrain/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/deadbrain/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/deadbrain/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.35/jmh-generator-annprocess-1.35.jar com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 50)
+
+# Run progress: 0.00% complete, ETA 00:13:20
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.031 ops/ns
+# Warmup Iteration   2: 0.032 ops/ns
+Iteration   1: 0.041 ops/ns
+Iteration   2: 0.039 ops/ns
+Iteration   3: 0.040 ops/ns
+
+# Run progress: 1.25% complete, ETA 00:13:38
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.031 ops/ns
+# Warmup Iteration   2: 0.033 ops/ns
+Iteration   1: 0.042 ops/ns
+Iteration   2: 0.041 ops/ns
+Iteration   3: 0.041 ops/ns
+
+# Run progress: 2.50% complete, ETA 00:13:25
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.031 ops/ns
+# Warmup Iteration   2: 0.033 ops/ns
+Iteration   1: 0.041 ops/ns
+Iteration   2: 0.041 ops/ns
+Iteration   3: 0.041 ops/ns
+
+# Run progress: 3.75% complete, ETA 00:13:13
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.032 ops/ns
+# Warmup Iteration   2: 0.033 ops/ns
+Iteration   1: 0.041 ops/ns
+Iteration   2: 0.041 ops/ns
+Iteration   3: 0.041 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  0.041 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.039, 0.041, 0.042), stdev = 0.001
+  CI (99.9%): [0.040, 0.041] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 100)
+
+# Run progress: 5.00% complete, ETA 00:13:02
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.015 ops/ns
+# Warmup Iteration   2: 0.015 ops/ns
+Iteration   1: 0.019 ops/ns
+Iteration   2: 0.019 ops/ns
+Iteration   3: 0.019 ops/ns
+
+# Run progress: 6.25% complete, ETA 00:12:52
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.015 ops/ns
+# Warmup Iteration   2: 0.015 ops/ns
+Iteration   1: 0.018 ops/ns
+Iteration   2: 0.018 ops/ns
+Iteration   3: 0.018 ops/ns
+
+# Run progress: 7.50% complete, ETA 00:12:42
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.015 ops/ns
+# Warmup Iteration   2: 0.015 ops/ns
+Iteration   1: 0.018 ops/ns
+Iteration   2: 0.018 ops/ns
+Iteration   3: 0.019 ops/ns
+
+# Run progress: 8.75% complete, ETA 00:12:32
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.015 ops/ns
+# Warmup Iteration   2: 0.016 ops/ns
+Iteration   1: 0.019 ops/ns
+Iteration   2: 0.019 ops/ns
+Iteration   3: 0.018 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  0.018 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.018, 0.018, 0.019), stdev = 0.001
+  CI (99.9%): [0.018, 0.019] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 200)
+
+# Run progress: 10.00% complete, ETA 00:12:21
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.007 ops/ns
+# Warmup Iteration   2: 0.007 ops/ns
+Iteration   1: 0.009 ops/ns
+Iteration   2: 0.009 ops/ns
+Iteration   3: 0.009 ops/ns
+
+# Run progress: 11.25% complete, ETA 00:12:11
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.007 ops/ns
+# Warmup Iteration   2: 0.008 ops/ns
+Iteration   1: 0.009 ops/ns
+Iteration   2: 0.009 ops/ns
+Iteration   3: 0.009 ops/ns
+
+# Run progress: 12.50% complete, ETA 00:12:00
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.007 ops/ns
+# Warmup Iteration   2: 0.007 ops/ns
+Iteration   1: 0.009 ops/ns
+Iteration   2: 0.009 ops/ns
+Iteration   3: 0.009 ops/ns
+
+# Run progress: 13.75% complete, ETA 00:11:50
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.007 ops/ns
+# Warmup Iteration   2: 0.007 ops/ns
+Iteration   1: 0.009 ops/ns
+Iteration   2: 0.009 ops/ns
+Iteration   3: 0.009 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  0.009 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.009, 0.009, 0.009), stdev = 0.001
+  CI (99.9%): [0.009, 0.009] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 250)
+
+# Run progress: 15.00% complete, ETA 00:11:40
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.006 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.006 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.006 ops/ns
+
+# Run progress: 16.25% complete, ETA 00:11:29
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.005 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.007 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.007 ops/ns
+
+# Run progress: 17.50% complete, ETA 00:11:19
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.006 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.007 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.007 ops/ns
+
+# Run progress: 18.75% complete, ETA 00:11:09
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.006 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.007 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.006 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  0.007 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.006, 0.007, 0.007), stdev = 0.001
+  CI (99.9%): [0.006, 0.007] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 300)
+
+# Run progress: 20.00% complete, ETA 00:10:59
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.004 ops/ns
+# Warmup Iteration   2: 0.005 ops/ns
+Iteration   1: 0.005 ops/ns
+Iteration   2: 0.005 ops/ns
+Iteration   3: 0.006 ops/ns
+
+# Run progress: 21.25% complete, ETA 00:10:48
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.005 ops/ns
+# Warmup Iteration   2: 0.005 ops/ns
+Iteration   1: 0.006 ops/ns
+Iteration   2: 0.006 ops/ns
+Iteration   3: 0.006 ops/ns
+
+# Run progress: 22.50% complete, ETA 00:10:38
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.005 ops/ns
+# Warmup Iteration   2: 0.005 ops/ns
+Iteration   1: 0.006 ops/ns
+Iteration   2: 0.006 ops/ns
+Iteration   3: 0.006 ops/ns
+
+# Run progress: 23.75% complete, ETA 00:10:28
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.005 ops/ns
+# Warmup Iteration   2: 0.005 ops/ns
+Iteration   1: 0.006 ops/ns
+Iteration   2: 0.006 ops/ns
+Iteration   3: 0.005 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  0.006 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.005, 0.006, 0.006), stdev = 0.001
+  CI (99.9%): [0.005, 0.006] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 50)
+
+# Run progress: 25.00% complete, ETA 00:10:17
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.006 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.007 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.007 ops/ns
+
+# Run progress: 26.25% complete, ETA 00:10:07
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.006 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.007 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.007 ops/ns
+
+# Run progress: 27.50% complete, ETA 00:09:57
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.006 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.007 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.008 ops/ns
+
+# Run progress: 28.75% complete, ETA 00:09:46
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+0.006 ops/ns
+# Warmup Iteration   2: 0.006 ops/ns
+Iteration   1: 0.007 ops/ns
+Iteration   2: 0.007 ops/ns
+Iteration   3: 0.007 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  0.007 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.007, 0.007, 0.008), stdev = 0.001
+  CI (99.9%): [0.007, 0.008] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 100)
+
+# Run progress: 30.00% complete, ETA 00:09:36
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.003 ops/ns
+# Warmup Iteration   2: 0.003 ops/ns
+Iteration   1: 0.003 ops/ns
+Iteration   2: 0.004 ops/ns
+Iteration   3: 0.003 ops/ns
+
+# Run progress: 31.25% complete, ETA 00:09:26
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.003 ops/ns
+# Warmup Iteration   2: 0.003 ops/ns
+Iteration   1: 0.003 ops/ns
+Iteration   2: 0.004 ops/ns
+Iteration   3: 0.003 ops/ns
+
+# Run progress: 32.50% complete, ETA 00:09:15
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.003 ops/ns
+# Warmup Iteration   2: 0.003 ops/ns
+Iteration   1: 0.003 ops/ns
+Iteration   2: 0.003 ops/ns
+Iteration   3: 0.004 ops/ns
+
+# Run progress: 33.75% complete, ETA 00:09:05
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+0.003 ops/ns
+# Warmup Iteration   2: 0.003 ops/ns
+Iteration   1: 0.003 ops/ns
+Iteration   2: 0.003 ops/ns
+Iteration   3: 0.004 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  0.003 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.003, 0.003, 0.004), stdev = 0.001
+  CI (99.9%): [0.003, 0.004] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 200)
+
+# Run progress: 35.00% complete, ETA 00:08:55
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.002 ops/ns
+Iteration   2: 0.002 ops/ns
+Iteration   3: 0.002 ops/ns
+
+# Run progress: 36.25% complete, ETA 00:08:45
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.002 ops/ns
+Iteration   2: 0.002 ops/ns
+Iteration   3: 0.002 ops/ns
+
+# Run progress: 37.50% complete, ETA 00:08:34
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.002 ops/ns
+Iteration   2: 0.002 ops/ns
+Iteration   3: 0.002 ops/ns
+
+# Run progress: 38.75% complete, ETA 00:08:24
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.002 ops/ns
+Iteration   2: 0.002 ops/ns
+Iteration   3: 0.002 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  0.002 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.002, 0.002, 0.002), stdev = 0.001
+  CI (99.9%): [0.002, 0.002] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 250)
+
+# Run progress: 40.00% complete, ETA 00:08:14
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+# Run progress: 41.25% complete, ETA 00:08:03
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+# Run progress: 42.50% complete, ETA 00:07:53
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+# Run progress: 43.75% complete, ETA 00:07:43
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  0.001 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [0.001, 0.001] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 300)
+
+# Run progress: 45.00% complete, ETA 00:07:32
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+# Run progress: 46.25% complete, ETA 00:07:22
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+# Run progress: 47.50% complete, ETA 00:07:12
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+# Run progress: 48.75% complete, ETA 00:07:02
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+0.001 ops/ns
+# Warmup Iteration   2: 0.001 ops/ns
+Iteration   1: 0.001 ops/ns
+Iteration   2: 0.001 ops/ns
+Iteration   3: 0.001 ops/ns
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  0.001 ±(99.9%) 0.001 ops/ns [Average]
+  (min, avg, max) = (0.001, 0.001, 0.001), stdev = 0.001
+  CI (99.9%): [0.001, 0.001] (assumes normal distribution)
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 50)
+
+# Run progress: 50.00% complete, ETA 00:06:51
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1257.792 ±(99.9%) 243.289 ns/op
+# Warmup Iteration   2: 1167.775 ±(99.9%) 7.778 ns/op
+Iteration   1: 1173.966 ±(99.9%) 6.627 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9840.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 14772.890 ns/op
+                 callCOmputeLoopShorter·p1.00:   23232.000 ns/op
+
+Iteration   2: 1173.158 ±(99.9%) 7.162 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10336.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16681.728 ns/op
+                 callCOmputeLoopShorter·p1.00:   24768.000 ns/op
+
+Iteration   3: 1169.831 ±(99.9%) 6.728 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10400.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 14774.240 ns/op
+                 callCOmputeLoopShorter·p1.00:   19616.000 ns/op
+
+
+# Run progress: 51.25% complete, ETA 00:06:41
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1191.846 ±(99.9%) 31.878 ns/op
+# Warmup Iteration   2: 1171.837 ±(99.9%) 7.632 ns/op
+Iteration   1: 1198.396 ±(99.9%) 91.405 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9612.352 ns/op
+                 callCOmputeLoopShorter·p0.9999: 14683.594 ns/op
+                 callCOmputeLoopShorter·p1.00:   1755136.000 ns/op
+
+Iteration   2: 1180.237 ±(99.9%) 7.282 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1884.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10434.432 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15817.843 ns/op
+                 callCOmputeLoopShorter·p1.00:   20864.000 ns/op
+
+Iteration   3: 1175.881 ±(99.9%) 6.856 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1816.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10400.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 14703.560 ns/op
+                 callCOmputeLoopShorter·p1.00:   18560.000 ns/op
+
+
+# Run progress: 52.50% complete, ETA 00:06:31
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1187.668 ±(99.9%) 30.847 ns/op
+# Warmup Iteration   2: 1169.003 ±(99.9%) 8.182 ns/op
+Iteration   1: 1193.853 ±(99.9%) 94.425 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9835.840 ns/op
+                 callCOmputeLoopShorter·p0.9999: 14883.256 ns/op
+                 callCOmputeLoopShorter·p1.00:   1835008.000 ns/op
+
+Iteration   2: 1163.726 ±(99.9%) 6.703 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10048.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15117.480 ns/op
+                 callCOmputeLoopShorter·p1.00:   20992.000 ns/op
+
+Iteration   3: 1168.934 ±(99.9%) 6.836 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9953.120 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15431.296 ns/op
+                 callCOmputeLoopShorter·p1.00:   31008.000 ns/op
+
+
+# Run progress: 53.75% complete, ETA 00:06:20
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1197.473 ±(99.9%) 31.626 ns/op
+# Warmup Iteration   2: 1174.892 ±(99.9%) 9.972 ns/op
+Iteration   1: 1175.973 ±(99.9%) 9.435 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11024.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 31631.600 ns/op
+                 callCOmputeLoopShorter·p1.00:   54400.000 ns/op
+
+Iteration   2: 1186.906 ±(99.9%) 8.811 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11520.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 23424.486 ns/op
+                 callCOmputeLoopShorter·p1.00:   47104.000 ns/op
+
+Iteration   3: 1175.189 ±(99.9%) 7.266 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   978.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1884.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10869.376 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16165.338 ns/op
+                 callCOmputeLoopShorter·p1.00:   31968.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  N = 768109
+  mean =   1177.972 ±(99.9%) 11.072 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 768107
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 0
+    [ 875000.000, 1000000.000) = 0
+    [1000000.000, 1125000.000) = 0
+    [1125000.000, 1250000.000) = 0
+    [1250000.000, 1375000.000) = 0
+    [1375000.000, 1500000.000) = 0
+    [1500000.000, 1625000.000) = 0
+    [1625000.000, 1750000.000) = 0
+    [1750000.000, 1875000.000) = 2
+
+  Percentiles, ns/op:
+      p(0.0000) =    488.000 ns/op
+     p(50.0000) =    978.000 ns/op
+     p(90.0000) =   1466.000 ns/op
+     p(95.0000) =   1466.000 ns/op
+     p(99.0000) =   1466.000 ns/op
+     p(99.9000) =  10336.000 ns/op
+     p(99.9900) =  16128.000 ns/op
+     p(99.9990) =  46580.915 ns/op
+     p(99.9999) = 1835008.000 ns/op
+    p(100.0000) = 1835008.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 100)
+
+# Run progress: 55.00% complete, ETA 00:06:10
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1411.823 ±(99.9%) 285.680 ns/op
+# Warmup Iteration   2: 1237.311 ±(99.9%) 7.782 ns/op
+Iteration   1: 1232.236 ±(99.9%) 6.996 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10048.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 17651.277 ns/op
+                 callCOmputeLoopShorter·p1.00:   29024.000 ns/op
+
+Iteration   2: 1238.167 ±(99.9%) 7.144 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10825.792 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15339.803 ns/op
+                 callCOmputeLoopShorter·p1.00:   21856.000 ns/op
+
+Iteration   3: 1237.352 ±(99.9%) 7.100 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10414.400 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16699.040 ns/op
+                 callCOmputeLoopShorter·p1.00:   21568.000 ns/op
+
+
+# Run progress: 56.25% complete, ETA 00:06:00
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1269.576 ±(99.9%) 40.430 ns/op
+# Warmup Iteration   2: 1237.835 ±(99.9%) 10.218 ns/op
+Iteration   1: 1231.679 ±(99.9%) 6.591 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9917.200 ns/op
+                 callCOmputeLoopShorter·p0.9999: 14612.256 ns/op
+                 callCOmputeLoopShorter·p1.00:   23232.000 ns/op
+
+Iteration   2: 1232.561 ±(99.9%) 6.674 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10048.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 14330.720 ns/op
+                 callCOmputeLoopShorter·p1.00:   22528.000 ns/op
+
+Iteration   3: 1253.910 ±(99.9%) 58.766 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10396.736 ns/op
+                 callCOmputeLoopShorter·p0.9999: 18772.150 ns/op
+                 callCOmputeLoopShorter·p1.00:   1189888.000 ns/op
+
+
+# Run progress: 57.50% complete, ETA 00:05:50
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1362.001 ±(99.9%) 229.993 ns/op
+# Warmup Iteration   2: 1254.896 ±(99.9%) 63.229 ns/op
+Iteration   1: 1267.117 ±(99.9%) 83.971 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1816.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9568.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15228.232 ns/op
+                 callCOmputeLoopShorter·p1.00:   1228800.000 ns/op
+
+Iteration   2: 1261.864 ±(99.9%) 69.432 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1884.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9569.408 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16102.682 ns/op
+                 callCOmputeLoopShorter·p1.00:   1095680.000 ns/op
+
+Iteration   3: 1232.941 ±(99.9%) 7.031 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10076.800 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16050.480 ns/op
+                 callCOmputeLoopShorter·p1.00:   40768.000 ns/op
+
+
+# Run progress: 58.75% complete, ETA 00:05:39
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1452.029 ±(99.9%) 352.331 ns/op
+# Warmup Iteration   2: 1256.667 ±(99.9%) 72.399 ns/op
+Iteration   1: 1234.168 ±(99.9%) 6.781 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9984.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16318.790 ns/op
+                 callCOmputeLoopShorter·p1.00:   23392.000 ns/op
+
+Iteration   2: 1233.616 ±(99.9%) 6.857 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9984.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 18040.256 ns/op
+                 callCOmputeLoopShorter·p1.00:   23040.000 ns/op
+
+Iteration   3: 1254.643 ±(99.9%) 50.351 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10816.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16919.578 ns/op
+                 callCOmputeLoopShorter·p1.00:   1005568.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  N = 797064
+  mean =   1242.544 ±(99.9%) 11.291 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 797058
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 0
+    [ 875000.000, 1000000.000) = 1
+    [1000000.000, 1125000.000) = 2
+    [1125000.000, 1250000.000) = 3
+    [1250000.000, 1375000.000) = 0
+    [1375000.000, 1500000.000) = 0
+    [1500000.000, 1625000.000) = 0
+    [1625000.000, 1750000.000) = 0
+    [1750000.000, 1875000.000) = 0
+
+  Percentiles, ns/op:
+      p(0.0000) =    488.000 ns/op
+     p(50.0000) =   1396.000 ns/op
+     p(90.0000) =   1466.000 ns/op
+     p(95.0000) =   1466.000 ns/op
+     p(99.0000) =   1886.000 ns/op
+     p(99.9000) =  10112.000 ns/op
+     p(99.9900) =  16192.000 ns/op
+     p(99.9990) =  29461.869 ns/op
+     p(99.9999) = 1228800.000 ns/op
+    p(100.0000) = 1228800.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 200)
+
+# Run progress: 60.00% complete, ETA 00:05:29
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+1630.654 ±(99.9%) 401.318 ns/op
+# Warmup Iteration   2: 1326.122 ±(99.9%) 61.132 ns/op
+Iteration   1: 1329.196 ±(99.9%) 59.032 ns/op
+                 callCOmputeLoopShorter·p0.00:   838.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1954.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10038.720 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15123.752 ns/op
+                 callCOmputeLoopShorter·p1.00:   1216512.000 ns/op
+
+Iteration   2: 1331.004 ±(99.9%) 46.152 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1954.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10610.816 ns/op
+                 callCOmputeLoopShorter·p0.9999: 17342.067 ns/op
+                 callCOmputeLoopShorter·p1.00:   956416.000 ns/op
+
+Iteration   3: 1331.125 ±(99.9%) 46.066 ns/op
+                 callCOmputeLoopShorter·p0.00:   838.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10464.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16812.765 ns/op
+                 callCOmputeLoopShorter·p1.00:   950272.000 ns/op
+
+
+# Run progress: 61.25% complete, ETA 00:05:19
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+1526.713 ±(99.9%) 274.775 ns/op
+# Warmup Iteration   2: 1333.786 ±(99.9%) 84.598 ns/op
+Iteration   1: 1297.522 ±(99.9%) 6.408 ns/op
+                 callCOmputeLoopShorter·p0.00:   838.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1954.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9984.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15072.000 ns/op
+                 callCOmputeLoopShorter·p1.00:   19552.000 ns/op
+
+Iteration   2: 1302.721 ±(99.9%) 7.221 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1954.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10544.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 19402.656 ns/op
+                 callCOmputeLoopShorter·p1.00:   25344.000 ns/op
+
+Iteration   3: 1321.406 ±(99.9%) 70.289 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1954.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10544.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 20309.248 ns/op
+                 callCOmputeLoopShorter·p1.00:   1470464.000 ns/op
+
+
+# Run progress: 62.50% complete, ETA 00:05:08
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+1435.319 ±(99.9%) 266.267 ns/op
+# Warmup Iteration   2: 1323.016 ±(99.9%) 68.576 ns/op
+Iteration   1: 1317.017 ±(99.9%) 6.661 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10180.688 ns/op
+                 callCOmputeLoopShorter·p0.9999: 15298.712 ns/op
+                 callCOmputeLoopShorter·p1.00:   27168.000 ns/op
+
+Iteration   2: 1324.071 ±(99.9%) 6.975 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10336.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 18698.442 ns/op
+                 callCOmputeLoopShorter·p1.00:   23296.000 ns/op
+
+Iteration   3: 1315.664 ±(99.9%) 6.758 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1954.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10201.152 ns/op
+                 callCOmputeLoopShorter·p0.9999: 17514.973 ns/op
+                 callCOmputeLoopShorter·p1.00:   26176.000 ns/op
+
+
+# Run progress: 63.75% complete, ETA 00:04:58
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+1446.116 ±(99.9%) 244.092 ns/op
+# Warmup Iteration   2: 1330.636 ±(99.9%) 79.820 ns/op
+Iteration   1: 1328.677 ±(99.9%) 71.254 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1954.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10464.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 19107.904 ns/op
+                 callCOmputeLoopShorter·p1.00:   1486848.000 ns/op
+
+Iteration   2: 1337.406 ±(99.9%) 86.711 ns/op
+                 callCOmputeLoopShorter·p0.00:   838.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10400.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16842.445 ns/op
+                 callCOmputeLoopShorter·p1.00:   1787904.000 ns/op
+
+Iteration   3: 1309.106 ±(99.9%) 7.104 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10174.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 17834.400 ns/op
+                 callCOmputeLoopShorter·p1.00:   27584.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  N = 824803
+  mean =   1320.370 ±(99.9%) 13.292 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 824797
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 0
+    [ 875000.000, 1000000.000) = 2
+    [1000000.000, 1125000.000) = 0
+    [1125000.000, 1250000.000) = 1
+    [1250000.000, 1375000.000) = 0
+    [1375000.000, 1500000.000) = 2
+    [1500000.000, 1625000.000) = 0
+    [1625000.000, 1750000.000) = 0
+    [1750000.000, 1875000.000) = 1
+
+  Percentiles, ns/op:
+      p(0.0000) =    419.000 ns/op
+     p(50.0000) =   1396.000 ns/op
+     p(90.0000) =   1466.000 ns/op
+     p(95.0000) =   1466.000 ns/op
+     p(99.0000) =   1956.000 ns/op
+     p(99.9000) =  10336.000 ns/op
+     p(99.9900) =  16819.136 ns/op
+     p(99.9990) =  34215.868 ns/op
+     p(99.9999) = 1787904.000 ns/op
+    p(100.0000) = 1787904.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 250)
+
+# Run progress: 65.00% complete, ETA 00:04:48
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+1614.874 ±(99.9%) 412.795 ns/op
+# Warmup Iteration   2: 1363.463 ±(99.9%) 106.297 ns/op
+Iteration   1: 1332.713 ±(99.9%) 8.167 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10960.512 ns/op
+                 callCOmputeLoopShorter·p0.9999: 17869.082 ns/op
+                 callCOmputeLoopShorter·p1.00:   36608.000 ns/op
+
+Iteration   2: 1377.835 ±(99.9%) 109.434 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10875.200 ns/op
+                 callCOmputeLoopShorter·p0.9999: 19083.280 ns/op
+                 callCOmputeLoopShorter·p1.00:   1394688.000 ns/op
+
+Iteration   3: 1382.870 ±(99.9%) 118.526 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11427.776 ns/op
+                 callCOmputeLoopShorter·p0.9999: 21008.685 ns/op
+                 callCOmputeLoopShorter·p1.00:   1466368.000 ns/op
+
+
+# Run progress: 66.25% complete, ETA 00:04:37
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+1573.215 ±(99.9%) 340.342 ns/op
+# Warmup Iteration   2: 1412.113 ±(99.9%) 152.361 ns/op
+Iteration   1: 1365.006 ±(99.9%) 100.259 ns/op
+                 callCOmputeLoopShorter·p0.00:   838.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  9987.520 ns/op
+                 callCOmputeLoopShorter·p0.9999: 18751.088 ns/op
+                 callCOmputeLoopShorter·p1.00:   1312768.000 ns/op
+
+Iteration   2: 1347.008 ±(99.9%) 67.266 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10828.160 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16964.704 ns/op
+                 callCOmputeLoopShorter·p1.00:   1155072.000 ns/op
+
+Iteration   3: 1358.895 ±(99.9%) 79.548 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11086.480 ns/op
+                 callCOmputeLoopShorter·p0.9999: 17669.674 ns/op
+                 callCOmputeLoopShorter·p1.00:   1046528.000 ns/op
+
+
+# Run progress: 67.50% complete, ETA 00:04:27
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+1627.220 ±(99.9%) 380.694 ns/op
+# Warmup Iteration   2: 1361.523 ±(99.9%) 65.740 ns/op
+Iteration   1: 1362.123 ±(99.9%) 73.353 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  12365.184 ns/op
+                 callCOmputeLoopShorter·p0.9999: 22836.518 ns/op
+                 callCOmputeLoopShorter·p1.00:   1257472.000 ns/op
+
+Iteration   2: 1380.070 ±(99.9%) 79.828 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1884.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  12785.680 ns/op
+                 callCOmputeLoopShorter·p0.9999: 21103.594 ns/op
+                 callCOmputeLoopShorter·p1.00:   997376.000 ns/op
+
+Iteration   3: 1349.454 ±(99.9%) 51.071 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11440.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16014.016 ns/op
+                 callCOmputeLoopShorter·p1.00:   879616.000 ns/op
+
+
+# Run progress: 68.75% complete, ETA 00:04:17
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+1701.270 ±(99.9%) 442.676 ns/op
+# Warmup Iteration   2: 1376.420 ±(99.9%) 125.825 ns/op
+Iteration   1: 1369.731 ±(99.9%) 81.587 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  12080.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 17225.933 ns/op
+                 callCOmputeLoopShorter·p1.00:   1374208.000 ns/op
+
+Iteration   2: 1394.054 ±(99.9%) 151.862 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10608.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 18200.474 ns/op
+                 callCOmputeLoopShorter·p1.00:   2162688.000 ns/op
+
+Iteration   3: 1396.453 ±(99.9%) 136.757 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  12496.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 18873.203 ns/op
+                 callCOmputeLoopShorter·p1.00:   1662976.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  N = 675998
+  mean =   1367.899 ±(99.9%) 27.507 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  250000.000) = 675980
+    [ 250000.000,  500000.000) = 0
+    [ 500000.000,  750000.000) = 0
+    [ 750000.000, 1000000.000) = 4
+    [1000000.000, 1250000.000) = 4
+    [1250000.000, 1500000.000) = 7
+    [1500000.000, 1750000.000) = 2
+    [1750000.000, 2000000.000) = 0
+    [2000000.000, 2250000.000) = 1
+    [2250000.000, 2500000.000) = 0
+    [2500000.000, 2750000.000) = 0
+
+  Percentiles, ns/op:
+      p(0.0000) =    419.000 ns/op
+     p(50.0000) =   1396.000 ns/op
+     p(90.0000) =   1466.000 ns/op
+     p(95.0000) =   1466.000 ns/op
+     p(99.0000) =   1956.000 ns/op
+     p(99.9000) =  11376.000 ns/op
+     p(99.9900) =  18560.000 ns/op
+     p(99.9990) = 1391575.081 ns/op
+     p(99.9999) = 2162688.000 ns/op
+    p(100.0000) = 2162688.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter
+# Parameters: (maxValue = 300)
+
+# Run progress: 70.00% complete, ETA 00:04:07
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+1780.263 ±(99.9%) 498.740 ns/op
+# Warmup Iteration   2: 1428.853 ±(99.9%) 140.535 ns/op
+Iteration   1: 1400.345 ±(99.9%) 105.195 ns/op
+                 callCOmputeLoopShorter·p0.00:   838.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1814.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2304.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11712.160 ns/op
+                 callCOmputeLoopShorter·p0.9999: 23934.272 ns/op
+                 callCOmputeLoopShorter·p1.00:   1501184.000 ns/op
+
+Iteration   2: 1469.567 ±(99.9%) 115.095 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1884.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2372.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  16267.360 ns/op
+                 callCOmputeLoopShorter·p0.9999: 30241.850 ns/op
+                 callCOmputeLoopShorter·p1.00:   1529856.000 ns/op
+
+Iteration   3: 1441.891 ±(99.9%) 110.308 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2372.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  14500.288 ns/op
+                 callCOmputeLoopShorter·p0.9999: 31115.296 ns/op
+                 callCOmputeLoopShorter·p1.00:   1150976.000 ns/op
+
+
+# Run progress: 71.25% complete, ETA 00:03:56
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+1834.104 ±(99.9%) 514.257 ns/op
+# Warmup Iteration   2: 1468.868 ±(99.9%) 167.862 ns/op
+Iteration   1: 1457.557 ±(99.9%) 136.276 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1884.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2372.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  14821.952 ns/op
+                 callCOmputeLoopShorter·p0.9999: 342092.480 ns/op
+                 callCOmputeLoopShorter·p1.00:   1014784.000 ns/op
+
+Iteration   2: 1386.709 ±(99.9%) 72.901 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1814.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2304.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  13631.680 ns/op
+                 callCOmputeLoopShorter·p0.9999: 22966.880 ns/op
+                 callCOmputeLoopShorter·p1.00:   1047552.000 ns/op
+
+Iteration   3: 1422.489 ±(99.9%) 139.910 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1816.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2304.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  12761.856 ns/op
+                 callCOmputeLoopShorter·p0.9999: 23814.605 ns/op
+                 callCOmputeLoopShorter·p1.00:   1660928.000 ns/op
+
+
+# Run progress: 72.50% complete, ETA 00:03:46
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+1618.072 ±(99.9%) 286.644 ns/op
+# Warmup Iteration   2: 1443.532 ±(99.9%) 165.488 ns/op
+Iteration   1: 1439.135 ±(99.9%) 132.103 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2372.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  13145.568 ns/op
+                 callCOmputeLoopShorter·p0.9999: 21927.437 ns/op
+                 callCOmputeLoopShorter·p1.00:   1224704.000 ns/op
+
+Iteration   2: 1394.436 ±(99.9%) 11.353 ns/op
+                 callCOmputeLoopShorter·p0.00:   488.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1886.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   2372.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  12976.000 ns/op
+                 callCOmputeLoopShorter·p0.9999: 24648.176 ns/op
+                 callCOmputeLoopShorter·p1.00:   43008.000 ns/op
+
+Iteration   3: 1383.152 ±(99.9%) 60.841 ns/op
+                 callCOmputeLoopShorter·p0.00:   419.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  13149.376 ns/op
+                 callCOmputeLoopShorter·p0.9999: 21551.667 ns/op
+                 callCOmputeLoopShorter·p1.00:   865280.000 ns/op
+
+
+# Run progress: 73.75% complete, ETA 00:03:36
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+1824.122 ±(99.9%) 574.767 ns/op
+# Warmup Iteration   2: 1441.081 ±(99.9%) 167.016 ns/op
+Iteration   1: 1404.516 ±(99.9%) 119.601 ns/op
+                 callCOmputeLoopShorter·p0.00:   838.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  10754.432 ns/op
+                 callCOmputeLoopShorter·p0.9999: 16013.347 ns/op
+                 callCOmputeLoopShorter·p1.00:   1259520.000 ns/op
+
+Iteration   2: 1417.516 ±(99.9%) 118.304 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11688.544 ns/op
+                 callCOmputeLoopShorter·p0.9999: 26817.210 ns/op
+                 callCOmputeLoopShorter·p1.00:   1161216.000 ns/op
+
+Iteration   3: 1380.810 ±(99.9%) 65.998 ns/op
+                 callCOmputeLoopShorter·p0.00:   489.000 ns/op
+                 callCOmputeLoopShorter·p0.50:   1396.000 ns/op
+                 callCOmputeLoopShorter·p0.90:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.95:   1466.000 ns/op
+                 callCOmputeLoopShorter·p0.99:   1956.000 ns/op
+                 callCOmputeLoopShorter·p0.999:  11577.280 ns/op
+                 callCOmputeLoopShorter·p0.9999: 18936.256 ns/op
+                 callCOmputeLoopShorter·p1.00:   957440.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callCOmputeLoopShorter":
+  N = 563581
+  mean =   1416.087 ±(99.9%) 30.502 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 563560
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 2
+    [ 875000.000, 1000000.000) = 6
+    [1000000.000, 1125000.000) = 5
+    [1125000.000, 1250000.000) = 4
+    [1250000.000, 1375000.000) = 1
+    [1375000.000, 1500000.000) = 0
+    [1500000.000, 1625000.000) = 2
+    [1625000.000, 1750000.000) = 1
+    [1750000.000, 1875000.000) = 0
+
+  Percentiles, ns/op:
+      p(0.0000) =    419.000 ns/op
+     p(50.0000) =   1396.000 ns/op
+     p(90.0000) =   1466.000 ns/op
+     p(95.0000) =   1884.000 ns/op
+     p(99.0000) =   2304.000 ns/op
+     p(99.9000) =  13200.000 ns/op
+     p(99.9900) =  25245.613 ns/op
+     p(99.9990) = 1210380.247 ns/op
+     p(99.9999) = 1660928.000 ns/op
+    p(100.0000) = 1660928.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 50)
+
+# Run progress: 75.00% complete, ETA 00:03:25
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1610.075 ±(99.9%) 427.273 ns/op
+# Warmup Iteration   2: 1354.889 ±(99.9%) 79.163 ns/op
+Iteration   1: 1327.690 ±(99.9%) 7.913 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  10880.000 ns/op
+                 callComputeWithLoop·p0.9999: 18609.587 ns/op
+                 callComputeWithLoop·p1.00:   27488.000 ns/op
+
+Iteration   2: 1343.833 ±(99.9%) 66.867 ns/op
+                 callComputeWithLoop·p0.00:   419.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  11311.680 ns/op
+                 callComputeWithLoop·p0.9999: 18508.493 ns/op
+                 callComputeWithLoop·p1.00:   1191936.000 ns/op
+
+Iteration   3: 1396.549 ±(99.9%) 128.239 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  10551.104 ns/op
+                 callComputeWithLoop·p0.9999: 18239.997 ns/op
+                 callComputeWithLoop·p1.00:   1366016.000 ns/op
+
+
+# Run progress: 76.25% complete, ETA 00:03:15
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1747.363 ±(99.9%) 487.975 ns/op
+# Warmup Iteration   2: 1356.879 ±(99.9%) 95.725 ns/op
+Iteration   1: 1326.904 ±(99.9%) 7.452 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  10752.000 ns/op
+                 callComputeWithLoop·p0.9999: 15710.080 ns/op
+                 callComputeWithLoop·p1.00:   21440.000 ns/op
+
+Iteration   2: 1379.699 ±(99.9%) 122.004 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  11024.000 ns/op
+                 callComputeWithLoop·p0.9999: 17136.758 ns/op
+                 callComputeWithLoop·p1.00:   1527808.000 ns/op
+
+Iteration   3: 1329.502 ±(99.9%) 8.568 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  12225.600 ns/op
+                 callComputeWithLoop·p0.9999: 19175.040 ns/op
+                 callComputeWithLoop·p1.00:   29024.000 ns/op
+
+
+# Run progress: 77.50% complete, ETA 00:03:05
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1600.782 ±(99.9%) 413.091 ns/op
+# Warmup Iteration   2: 1388.840 ±(99.9%) 132.449 ns/op
+Iteration   1: 1351.411 ±(99.9%) 86.024 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  10761.600 ns/op
+                 callComputeWithLoop·p0.9999: 17365.760 ns/op
+                 callComputeWithLoop·p1.00:   1533952.000 ns/op
+
+Iteration   2: 1356.181 ±(99.9%) 89.234 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  12299.200 ns/op
+                 callComputeWithLoop·p0.9999: 19762.640 ns/op
+                 callComputeWithLoop·p1.00:   1589248.000 ns/op
+
+Iteration   3: 1351.053 ±(99.9%) 78.650 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  11712.704 ns/op
+                 callComputeWithLoop·p0.9999: 20013.584 ns/op
+                 callComputeWithLoop·p1.00:   1409024.000 ns/op
+
+
+# Run progress: 78.75% complete, ETA 00:02:55
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =50
+Instantiated samples
+1517.623 ±(99.9%) 352.810 ns/op
+# Warmup Iteration   2: 1371.557 ±(99.9%) 101.683 ns/op
+Iteration   1: 1347.425 ±(99.9%) 60.107 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  12496.000 ns/op
+                 callComputeWithLoop·p0.9999: 20763.142 ns/op
+                 callComputeWithLoop·p1.00:   1067008.000 ns/op
+
+Iteration   2: 1355.477 ±(99.9%) 67.606 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  10880.000 ns/op
+                 callComputeWithLoop·p0.9999: 16998.336 ns/op
+                 callComputeWithLoop·p1.00:   1210368.000 ns/op
+
+Iteration   3: 1341.051 ±(99.9%) 8.648 ns/op
+                 callComputeWithLoop·p0.00:   419.000 ns/op
+                 callComputeWithLoop·p0.50:   1396.000 ns/op
+                 callComputeWithLoop·p0.90:   1466.000 ns/op
+                 callComputeWithLoop·p0.95:   1466.000 ns/op
+                 callComputeWithLoop·p0.99:   1956.000 ns/op
+                 callComputeWithLoop·p0.999:  12443.008 ns/op
+                 callComputeWithLoop·p0.9999: 19467.251 ns/op
+                 callComputeWithLoop·p1.00:   24640.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  N = 706205
+  mean =   1350.561 ±(99.9%) 21.361 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 706194
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 0
+    [ 875000.000, 1000000.000) = 0
+    [1000000.000, 1125000.000) = 1
+    [1125000.000, 1250000.000) = 2
+    [1250000.000, 1375000.000) = 3
+    [1375000.000, 1500000.000) = 1
+    [1500000.000, 1625000.000) = 4
+    [1625000.000, 1750000.000) = 0
+    [1750000.000, 1875000.000) = 0
+
+  Percentiles, ns/op:
+      p(0.0000) =    419.000 ns/op
+     p(50.0000) =   1396.000 ns/op
+     p(90.0000) =   1466.000 ns/op
+     p(95.0000) =   1466.000 ns/op
+     p(99.0000) =   1956.000 ns/op
+     p(99.9000) =  11376.000 ns/op
+     p(99.9900) =  18232.282 ns/op
+     p(99.9990) = 1306115.604 ns/op
+     p(99.9999) = 1589248.000 ns/op
+    p(100.0000) = 1589248.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 100)
+
+# Run progress: 80.00% complete, ETA 00:02:44
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1875.549 ±(99.9%) 364.180 ns/op
+# Warmup Iteration   2: 1588.378 ±(99.9%) 137.287 ns/op
+Iteration   1: 1538.814 ±(99.9%) 82.515 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2372.000 ns/op
+                 callComputeWithLoop·p0.999:  11520.000 ns/op
+                 callComputeWithLoop·p0.9999: 20328.608 ns/op
+                 callComputeWithLoop·p1.00:   1271808.000 ns/op
+
+Iteration   2: 1566.698 ±(99.9%) 102.599 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2372.000 ns/op
+                 callComputeWithLoop·p0.999:  11728.000 ns/op
+                 callComputeWithLoop·p0.9999: 23597.747 ns/op
+                 callComputeWithLoop·p1.00:   1081344.000 ns/op
+
+Iteration   3: 1565.092 ±(99.9%) 105.043 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2372.000 ns/op
+                 callComputeWithLoop·p0.999:  11547.712 ns/op
+                 callComputeWithLoop·p0.9999: 26183.459 ns/op
+                 callComputeWithLoop·p1.00:   1175552.000 ns/op
+
+
+# Run progress: 81.25% complete, ETA 00:02:34
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1879.390 ±(99.9%) 408.203 ns/op
+# Warmup Iteration   2: 1595.100 ±(99.9%) 150.955 ns/op
+Iteration   1: 1547.352 ±(99.9%) 88.160 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2444.000 ns/op
+                 callComputeWithLoop·p0.999:  11872.000 ns/op
+                 callComputeWithLoop·p0.9999: 22299.933 ns/op
+                 callComputeWithLoop·p1.00:   1292288.000 ns/op
+
+Iteration   2: 1551.910 ±(99.9%) 91.831 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2372.000 ns/op
+                 callComputeWithLoop·p0.999:  11312.000 ns/op
+                 callComputeWithLoop·p0.9999: 23594.240 ns/op
+                 callComputeWithLoop·p1.00:   1064960.000 ns/op
+
+Iteration   3: 1504.337 ±(99.9%) 7.805 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2372.000 ns/op
+                 callComputeWithLoop·p0.999:  11963.712 ns/op
+                 callComputeWithLoop·p0.9999: 17584.957 ns/op
+                 callComputeWithLoop·p1.00:   30496.000 ns/op
+
+
+# Run progress: 82.50% complete, ETA 00:02:24
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1890.249 ±(99.9%) 429.957 ns/op
+# Warmup Iteration   2: 1557.821 ±(99.9%) 103.193 ns/op
+Iteration   1: 1567.221 ±(99.9%) 133.126 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1816.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2444.000 ns/op
+                 callComputeWithLoop·p0.999:  11136.000 ns/op
+                 callComputeWithLoop·p0.9999: 20832.800 ns/op
+                 callComputeWithLoop·p1.00:   1644544.000 ns/op
+
+Iteration   2: 1531.172 ±(99.9%) 64.507 ns/op
+                 callComputeWithLoop·p0.00:   419.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2444.000 ns/op
+                 callComputeWithLoop·p0.999:  12384.704 ns/op
+                 callComputeWithLoop·p0.9999: 22361.341 ns/op
+                 callComputeWithLoop·p1.00:   848896.000 ns/op
+
+Iteration   3: 1578.288 ±(99.9%) 101.727 ns/op
+                 callComputeWithLoop·p0.00:   419.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1886.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2444.000 ns/op
+                 callComputeWithLoop·p0.999:  12940.608 ns/op
+                 callComputeWithLoop·p0.9999: 25910.266 ns/op
+                 callComputeWithLoop·p1.00:   998400.000 ns/op
+
+
+# Run progress: 83.75% complete, ETA 00:02:13
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =100
+Instantiated samples
+1897.381 ±(99.9%) 407.312 ns/op
+# Warmup Iteration   2: 1570.280 ±(99.9%) 122.953 ns/op
+Iteration   1: 1554.620 ±(99.9%) 77.821 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1886.000 ns/op
+                 callComputeWithLoop·p0.95:   1954.000 ns/op
+                 callComputeWithLoop·p0.99:   2372.000 ns/op
+                 callComputeWithLoop·p0.999:  11581.760 ns/op
+                 callComputeWithLoop·p0.9999: 26711.712 ns/op
+                 callComputeWithLoop·p1.00:   1069056.000 ns/op
+
+Iteration   2: 1551.761 ±(99.9%) 78.259 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1886.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2444.000 ns/op
+                 callComputeWithLoop·p0.999:  11872.000 ns/op
+                 callComputeWithLoop·p0.9999: 30139.840 ns/op
+                 callComputeWithLoop·p1.00:   1033216.000 ns/op
+
+Iteration   3: 1550.026 ±(99.9%) 99.953 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1466.000 ns/op
+                 callComputeWithLoop·p0.90:   1884.000 ns/op
+                 callComputeWithLoop·p0.95:   1886.000 ns/op
+                 callComputeWithLoop·p0.99:   2444.000 ns/op
+                 callComputeWithLoop·p0.999:  11376.000 ns/op
+                 callComputeWithLoop·p0.9999: 22983.654 ns/op
+                 callComputeWithLoop·p1.00:   1306624.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  N = 730752
+  mean =   1550.547 ±(99.9%) 26.205 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 730722
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 5
+    [ 875000.000, 1000000.000) = 14
+    [1000000.000, 1125000.000) = 4
+    [1125000.000, 1250000.000) = 1
+    [1250000.000, 1375000.000) = 4
+    [1375000.000, 1500000.000) = 0
+    [1500000.000, 1625000.000) = 1
+    [1625000.000, 1750000.000) = 1
+    [1750000.000, 1875000.000) = 0
+
+  Percentiles, ns/op:
+      p(0.0000) =    419.000 ns/op
+     p(50.0000) =   1466.000 ns/op
+     p(90.0000) =   1884.000 ns/op
+     p(95.0000) =   1886.000 ns/op
+     p(99.0000) =   2444.000 ns/op
+     p(99.9000) =  11792.000 ns/op
+     p(99.9900) =  21329.542 ns/op
+     p(99.9990) = 1146580.214 ns/op
+     p(99.9999) = 1644544.000 ns/op
+    p(100.0000) = 1644544.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 200)
+
+# Run progress: 85.00% complete, ETA 00:02:03
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+2414.927 ±(99.9%) 418.392 ns/op
+# Warmup Iteration   2: 2016.428 ±(99.9%) 148.831 ns/op
+Iteration   1: 2025.180 ±(99.9%) 138.051 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  12206.464 ns/op
+                 callComputeWithLoop·p0.9999: 702273.766 ns/op
+                 callComputeWithLoop·p1.00:   1370112.000 ns/op
+
+Iteration   2: 1994.706 ±(99.9%) 109.668 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  12533.440 ns/op
+                 callComputeWithLoop·p0.9999: 39118.528 ns/op
+                 callComputeWithLoop·p1.00:   1018880.000 ns/op
+
+Iteration   3: 2007.086 ±(99.9%) 115.682 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  13968.000 ns/op
+                 callComputeWithLoop·p0.9999: 28907.562 ns/op
+                 callComputeWithLoop·p1.00:   1081344.000 ns/op
+
+
+# Run progress: 86.25% complete, ETA 00:01:53
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+2430.573 ±(99.9%) 464.988 ns/op
+# Warmup Iteration   2: 2015.060 ±(99.9%) 126.562 ns/op
+Iteration   1: 2006.374 ±(99.9%) 115.603 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   2304.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  14627.392 ns/op
+                 callComputeWithLoop·p0.9999: 26511.632 ns/op
+                 callComputeWithLoop·p1.00:   1282048.000 ns/op
+
+Iteration   2: 1995.205 ±(99.9%) 111.167 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  12871.808 ns/op
+                 callComputeWithLoop·p0.9999: 31413.389 ns/op
+                 callComputeWithLoop·p1.00:   1081344.000 ns/op
+
+Iteration   3: 2018.105 ±(99.9%) 123.013 ns/op
+                 callComputeWithLoop·p0.00:   419.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   2304.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3420.000 ns/op
+                 callComputeWithLoop·p0.999:  14229.312 ns/op
+                 callComputeWithLoop·p0.9999: 43018.176 ns/op
+                 callComputeWithLoop·p1.00:   1175552.000 ns/op
+
+
+# Run progress: 87.50% complete, ETA 00:01:42
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+2477.067 ±(99.9%) 544.247 ns/op
+# Warmup Iteration   2: 1985.011 ±(99.9%) 122.570 ns/op
+Iteration   1: 1974.812 ±(99.9%) 91.018 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  11914.624 ns/op
+                 callComputeWithLoop·p0.9999: 23560.502 ns/op
+                 callComputeWithLoop·p1.00:   1013760.000 ns/op
+
+Iteration   2: 2031.331 ±(99.9%) 129.510 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  15350.560 ns/op
+                 callComputeWithLoop·p0.9999: 793843.680 ns/op
+                 callComputeWithLoop·p1.00:   1064960.000 ns/op
+
+Iteration   3: 1967.725 ±(99.9%) 78.669 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  13015.680 ns/op
+                 callComputeWithLoop·p0.9999: 23831.168 ns/op
+                 callComputeWithLoop·p1.00:   917504.000 ns/op
+
+
+# Run progress: 88.75% complete, ETA 00:01:32
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =200
+Instantiated samples
+2597.987 ±(99.9%) 498.915 ns/op
+# Warmup Iteration   2: 2031.475 ±(99.9%) 189.320 ns/op
+Iteration   1: 1962.741 ±(99.9%) 69.871 ns/op
+                 callComputeWithLoop·p0.00:   488.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   2304.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3420.000 ns/op
+                 callComputeWithLoop·p0.999:  14211.968 ns/op
+                 callComputeWithLoop·p0.9999: 27586.330 ns/op
+                 callComputeWithLoop·p1.00:   1269760.000 ns/op
+
+Iteration   2: 2014.357 ±(99.9%) 145.411 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  12898.880 ns/op
+                 callComputeWithLoop·p0.9999: 25978.432 ns/op
+                 callComputeWithLoop·p1.00:   1480704.000 ns/op
+
+Iteration   3: 2037.766 ±(99.9%) 156.609 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1886.000 ns/op
+                 callComputeWithLoop·p0.90:   1956.000 ns/op
+                 callComputeWithLoop·p0.95:   2372.000 ns/op
+                 callComputeWithLoop·p0.99:   3352.000 ns/op
+                 callComputeWithLoop·p0.999:  14736.000 ns/op
+                 callComputeWithLoop·p0.9999: 36839.834 ns/op
+                 callComputeWithLoop·p1.00:   1562624.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  N = 743401
+  mean =   2002.902 ±(99.9%) 34.050 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 743349
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 8
+    [ 875000.000, 1000000.000) = 18
+    [1000000.000, 1125000.000) = 13
+    [1125000.000, 1250000.000) = 4
+    [1250000.000, 1375000.000) = 4
+    [1375000.000, 1500000.000) = 4
+    [1500000.000, 1625000.000) = 1
+    [1625000.000, 1750000.000) = 0
+    [1750000.000, 1875000.000) = 0
+
+  Percentiles, ns/op:
+      p(0.0000) =    419.000 ns/op
+     p(50.0000) =   1886.000 ns/op
+     p(90.0000) =   1956.000 ns/op
+     p(95.0000) =   2372.000 ns/op
+     p(99.0000) =   3352.000 ns/op
+     p(99.9000) =  13616.000 ns/op
+     p(99.9900) =  27571.795 ns/op
+     p(99.9990) = 1316821.811 ns/op
+     p(99.9999) = 1562624.000 ns/op
+    p(100.0000) = 1562624.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 250)
+
+# Run progress: 90.00% complete, ETA 00:01:22
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+2866.086 ±(99.9%) 597.424 ns/op
+# Warmup Iteration   2: 2251.131 ±(99.9%) 204.979 ns/op
+Iteration   1: 2249.446 ±(99.9%) 220.173 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3908.000 ns/op
+                 callComputeWithLoop·p0.999:  13628.864 ns/op
+                 callComputeWithLoop·p0.9999: 66480.819 ns/op
+                 callComputeWithLoop·p1.00:   1902592.000 ns/op
+
+Iteration   2: 2268.914 ±(99.9%) 209.391 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3908.000 ns/op
+                 callComputeWithLoop·p0.999:  14890.000 ns/op
+                 callComputeWithLoop·p0.9999: 1287321.600 ns/op
+                 callComputeWithLoop·p1.00:   1480704.000 ns/op
+
+Iteration   3: 2271.709 ±(99.9%) 212.383 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  15713.728 ns/op
+                 callComputeWithLoop·p0.9999: 1175834.010 ns/op
+                 callComputeWithLoop·p1.00:   1579008.000 ns/op
+
+
+# Run progress: 91.25% complete, ETA 00:01:12
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+2841.146 ±(99.9%) 644.229 ns/op
+# Warmup Iteration   2: 2176.221 ±(99.9%) 128.645 ns/op
+Iteration   1: 2228.188 ±(99.9%) 167.564 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  15854.560 ns/op
+                 callComputeWithLoop·p0.9999: 986338.099 ns/op
+                 callComputeWithLoop·p1.00:   1204224.000 ns/op
+
+Iteration   2: 2217.629 ±(99.9%) 145.775 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  15939.904 ns/op
+                 callComputeWithLoop·p0.9999: 772202.803 ns/op
+                 callComputeWithLoop·p1.00:   1105920.000 ns/op
+
+Iteration   3: 2253.482 ±(99.9%) 186.908 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  15280.096 ns/op
+                 callComputeWithLoop·p0.9999: 1047261.594 ns/op
+                 callComputeWithLoop·p1.00:   1275904.000 ns/op
+
+
+# Run progress: 92.50% complete, ETA 00:01:01
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+2831.891 ±(99.9%) 556.233 ns/op
+# Warmup Iteration   2: 2245.918 ±(99.9%) 188.150 ns/op
+Iteration   1: 2196.011 ±(99.9%) 140.548 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  12839.760 ns/op
+                 callComputeWithLoop·p0.9999: 765809.014 ns/op
+                 callComputeWithLoop·p1.00:   1039360.000 ns/op
+
+Iteration   2: 2233.199 ±(99.9%) 180.826 ns/op
+                 callComputeWithLoop·p0.00:   839.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  13766.256 ns/op
+                 callComputeWithLoop·p0.9999: 857226.342 ns/op
+                 callComputeWithLoop·p1.00:   1556480.000 ns/op
+
+Iteration   3: 2151.797 ±(99.9%) 115.642 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3772.000 ns/op
+                 callComputeWithLoop·p0.999:  13410.432 ns/op
+                 callComputeWithLoop·p0.9999: 27714.842 ns/op
+                 callComputeWithLoop·p1.00:   1122304.000 ns/op
+
+
+# Run progress: 93.75% complete, ETA 00:00:51
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =250
+Instantiated samples
+2912.477 ±(99.9%) 639.573 ns/op
+# Warmup Iteration   2: 2203.307 ±(99.9%) 171.343 ns/op
+Iteration   1: 2222.413 ±(99.9%) 177.519 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  15157.568 ns/op
+                 callComputeWithLoop·p0.9999: 989751.757 ns/op
+                 callComputeWithLoop·p1.00:   1318912.000 ns/op
+
+Iteration   2: 2122.499 ±(99.9%) 71.597 ns/op
+                 callComputeWithLoop·p0.00:   489.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  15639.520 ns/op
+                 callComputeWithLoop·p0.9999: 29498.310 ns/op
+                 callComputeWithLoop·p1.00:   1091584.000 ns/op
+
+Iteration   3: 2208.314 ±(99.9%) 154.921 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   1954.000 ns/op
+                 callComputeWithLoop·p0.90:   2372.000 ns/op
+                 callComputeWithLoop·p0.95:   2444.000 ns/op
+                 callComputeWithLoop·p0.99:   3840.000 ns/op
+                 callComputeWithLoop·p0.999:  13463.808 ns/op
+                 callComputeWithLoop·p0.9999: 761378.099 ns/op
+                 callComputeWithLoop·p1.00:   1181696.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  N = 609549
+  mean =   2218.300 ±(99.9%) 48.985 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 609490
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 0
+    [ 750000.000,  875000.000) = 10
+    [ 875000.000, 1000000.000) = 5
+    [1000000.000, 1125000.000) = 16
+    [1125000.000, 1250000.000) = 10
+    [1250000.000, 1375000.000) = 8
+    [1375000.000, 1500000.000) = 5
+    [1500000.000, 1625000.000) = 3
+    [1625000.000, 1750000.000) = 1
+    [1750000.000, 1875000.000) = 0
+
+  Percentiles, ns/op:
+      p(0.0000) =    489.000 ns/op
+     p(50.0000) =   1954.000 ns/op
+     p(90.0000) =   2372.000 ns/op
+     p(95.0000) =   2444.000 ns/op
+     p(99.0000) =   3840.000 ns/op
+     p(99.9000) =  14512.000 ns/op
+     p(99.9900) =  45189.440 ns/op
+     p(99.9990) = 1479921.664 ns/op
+     p(99.9999) = 1902592.000 ns/op
+    p(100.0000) = 1902592.000 ns/op
+
+
+# JMH version: 1.35
+# VM version: JDK 17.0.4, OpenJDK 64-Bit Server VM, 17.0.4+8-Debian-1deb11u1
+# VM invoker: /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+# VM options: -Xmx256M
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 2 iterations, 2 s each
+# Measurement: 3 iterations, 2 s each
+# Timeout: 10 s per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop
+# Parameters: (maxValue = 300)
+
+# Run progress: 95.00% complete, ETA 00:00:41
+# Fork: 1 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+3043.695 ±(99.9%) 637.567 ns/op
+# Warmup Iteration   2: 2447.980 ±(99.9%) 234.072 ns/op
+Iteration   1: 2362.114 ±(99.9%) 152.619 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2304.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2860.000 ns/op
+                 callComputeWithLoop·p0.99:   4275.440 ns/op
+                 callComputeWithLoop·p0.999:  14304.000 ns/op
+                 callComputeWithLoop·p0.9999: 629345.274 ns/op
+                 callComputeWithLoop·p1.00:   1124352.000 ns/op
+
+Iteration   2: 2420.947 ±(99.9%) 186.604 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2860.000 ns/op
+                 callComputeWithLoop·p0.99:   4328.000 ns/op
+                 callComputeWithLoop·p0.999:  15052.672 ns/op
+                 callComputeWithLoop·p0.9999: 931173.376 ns/op
+                 callComputeWithLoop·p1.00:   1167360.000 ns/op
+
+Iteration   3: 2439.425 ±(99.9%) 207.988 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2792.000 ns/op
+                 callComputeWithLoop·p0.99:   4256.000 ns/op
+                 callComputeWithLoop·p0.999:  14481.280 ns/op
+                 callComputeWithLoop·p0.9999: 1005432.832 ns/op
+                 callComputeWithLoop·p1.00:   1232896.000 ns/op
+
+
+# Run progress: 96.25% complete, ETA 00:00:30
+# Fork: 2 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+3194.262 ±(99.9%) 716.805 ns/op
+# Warmup Iteration   2: 2412.891 ±(99.9%) 245.168 ns/op
+Iteration   1: 2469.075 ±(99.9%) 242.687 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2860.000 ns/op
+                 callComputeWithLoop·p0.99:   4328.000 ns/op
+                 callComputeWithLoop·p0.999:  14708.560 ns/op
+                 callComputeWithLoop·p0.9999: 1262502.912 ns/op
+                 callComputeWithLoop·p1.00:   1413120.000 ns/op
+
+Iteration   2: 2540.943 ±(99.9%) 307.385 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2864.000 ns/op
+                 callComputeWithLoop·p0.99:   4328.000 ns/op
+                 callComputeWithLoop·p0.999:  14780.800 ns/op
+                 callComputeWithLoop·p0.9999: 1439354.880 ns/op
+                 callComputeWithLoop·p1.00:   1865728.000 ns/op
+
+Iteration   3: 2537.588 ±(99.9%) 303.890 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2864.000 ns/op
+                 callComputeWithLoop·p0.99:   4328.000 ns/op
+                 callComputeWithLoop·p0.999:  15122.640 ns/op
+                 callComputeWithLoop·p0.9999: 1402722.099 ns/op
+                 callComputeWithLoop·p1.00:   1755136.000 ns/op
+
+
+# Run progress: 97.50% complete, ETA 00:00:20
+# Fork: 3 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+3144.782 ±(99.9%) 615.706 ns/op
+# Warmup Iteration   2: 2535.954 ±(99.9%) 309.797 ns/op
+Iteration   1: 2497.381 ±(99.9%) 271.958 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2860.000 ns/op
+                 callComputeWithLoop·p0.99:   4672.000 ns/op
+                 callComputeWithLoop·p0.999:  15776.000 ns/op
+                 callComputeWithLoop·p0.9999: 1368733.901 ns/op
+                 callComputeWithLoop·p1.00:   1574912.000 ns/op
+
+Iteration   2: 2463.206 ±(99.9%) 239.548 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2864.000 ns/op
+                 callComputeWithLoop·p0.99:   4672.000 ns/op
+                 callComputeWithLoop·p0.999:  15064.896 ns/op
+                 callComputeWithLoop·p0.9999: 1307580.006 ns/op
+                 callComputeWithLoop·p1.00:   1497088.000 ns/op
+
+Iteration   3: 2494.992 ±(99.9%) 270.033 ns/op
+                 callComputeWithLoop·p0.00:   838.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2864.000 ns/op
+                 callComputeWithLoop·p0.99:   4328.000 ns/op
+                 callComputeWithLoop·p0.999:  16095.600 ns/op
+                 callComputeWithLoop·p0.9999: 1343708.160 ns/op
+                 callComputeWithLoop·p1.00:   1615872.000 ns/op
+
+
+# Run progress: 98.75% complete, ETA 00:00:10
+# Fork: 4 of 4
+# Warmup Iteration   1: Setup with maxValue =300
+Instantiated samples
+3157.163 ±(99.9%) 745.874 ns/op
+# Warmup Iteration   2: 2424.625 ±(99.9%) 221.170 ns/op
+Iteration   1: 2419.801 ±(99.9%) 177.283 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2864.000 ns/op
+                 callComputeWithLoop·p0.99:   4328.000 ns/op
+                 callComputeWithLoop·p0.999:  15177.856 ns/op
+                 callComputeWithLoop·p0.9999: 918735.667 ns/op
+                 callComputeWithLoop·p1.00:   1029120.000 ns/op
+
+Iteration   2: 2413.148 ±(99.9%) 176.692 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2792.000 ns/op
+                 callComputeWithLoop·p0.99:   4256.000 ns/op
+                 callComputeWithLoop·p0.999:  15011.712 ns/op
+                 callComputeWithLoop·p0.9999: 836574.720 ns/op
+                 callComputeWithLoop·p1.00:   1081344.000 ns/op
+
+Iteration   3: 2415.050 ±(99.9%) 183.597 ns/op
+                 callComputeWithLoop·p0.00:   907.000 ns/op
+                 callComputeWithLoop·p0.50:   2372.000 ns/op
+                 callComputeWithLoop·p0.90:   2444.000 ns/op
+                 callComputeWithLoop·p0.95:   2860.000 ns/op
+                 callComputeWithLoop·p0.99:   4328.000 ns/op
+                 callComputeWithLoop·p0.999:  14491.200 ns/op
+                 callComputeWithLoop·p0.9999: 942776.320 ns/op
+                 callComputeWithLoop·p1.00:   1089536.000 ns/op
+
+
+
+Result "com.javaxpert.books.devjavapro.benchmark.BasicSamplesBenchmark.callComputeWithLoop":
+  N = 512924
+  mean =   2455.670 ±(99.9%) 66.793 ns/op
+
+  Histogram, ns/op:
+    [      0.000,  125000.000) = 512851
+    [ 125000.000,  250000.000) = 0
+    [ 250000.000,  375000.000) = 0
+    [ 375000.000,  500000.000) = 0
+    [ 500000.000,  625000.000) = 0
+    [ 625000.000,  750000.000) = 1
+    [ 750000.000,  875000.000) = 6
+    [ 875000.000, 1000000.000) = 17
+    [1000000.000, 1125000.000) = 10
+    [1125000.000, 1250000.000) = 7
+    [1250000.000, 1375000.000) = 14
+    [1375000.000, 1500000.000) = 9
+    [1500000.000, 1625000.000) = 6
+    [1625000.000, 1750000.000) = 1
+    [1750000.000, 1875000.000) = 2
+
+  Percentiles, ns/op:
+      p(0.0000) =    838.000 ns/op
+     p(50.0000) =   2372.000 ns/op
+     p(90.0000) =   2444.000 ns/op
+     p(95.0000) =   2860.000 ns/op
+     p(99.0000) =   4328.000 ns/op
+     p(99.9000) =  14944.000 ns/op
+     p(99.9900) = 988989.440 ns/op
+     p(99.9990) = 1598094.848 ns/op
+     p(99.9999) = 1865728.000 ns/op
+    p(100.0000) = 1865728.000 ns/op
+
+
+# Run complete. Total time: 00:13:43
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                                    (maxValue)    Mode     Cnt        Score    Error   Units
+BasicSamplesBenchmark.callCOmputeLoopShorter                                         50   thrpt      12        0.041 ±  0.001  ops/ns
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        100   thrpt      12        0.018 ±  0.001  ops/ns
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        200   thrpt      12        0.009 ±  0.001  ops/ns
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        250   thrpt      12        0.007 ±  0.001  ops/ns
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        300   thrpt      12        0.006 ±  0.001  ops/ns
+BasicSamplesBenchmark.callComputeWithLoop                                            50   thrpt      12        0.007 ±  0.001  ops/ns
+BasicSamplesBenchmark.callComputeWithLoop                                           100   thrpt      12        0.003 ±  0.001  ops/ns
+BasicSamplesBenchmark.callComputeWithLoop                                           200   thrpt      12        0.002 ±  0.001  ops/ns
+BasicSamplesBenchmark.callComputeWithLoop                                           250   thrpt      12        0.001 ±  0.001  ops/ns
+BasicSamplesBenchmark.callComputeWithLoop                                           300   thrpt      12        0.001 ±  0.001  ops/ns
+BasicSamplesBenchmark.callCOmputeLoopShorter                                         50  sample  768109     1177.972 ± 11.072   ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.00            50  sample              488.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.50            50  sample              978.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.90            50  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.95            50  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.99            50  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.999           50  sample            10336.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.9999          50  sample            16128.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p1.00            50  sample          1835008.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        100  sample  797064     1242.544 ± 11.291   ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.00           100  sample              488.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.50           100  sample             1396.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.90           100  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.95           100  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.99           100  sample             1886.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.999          100  sample            10112.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.9999         100  sample            16192.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p1.00           100  sample          1228800.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        200  sample  824803     1320.370 ± 13.292   ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.00           200  sample              419.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.50           200  sample             1396.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.90           200  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.95           200  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.99           200  sample             1956.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.999          200  sample            10336.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.9999         200  sample            16819.136            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p1.00           200  sample          1787904.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        250  sample  675998     1367.899 ± 27.507   ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.00           250  sample              419.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.50           250  sample             1396.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.90           250  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.95           250  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.99           250  sample             1956.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.999          250  sample            11376.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.9999         250  sample            18560.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p1.00           250  sample          2162688.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter                                        300  sample  563581     1416.087 ± 30.502   ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.00           300  sample              419.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.50           300  sample             1396.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.90           300  sample             1466.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.95           300  sample             1884.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.99           300  sample             2304.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.999          300  sample            13200.000            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p0.9999         300  sample            25245.613            ns/op
+BasicSamplesBenchmark.callCOmputeLoopShorter:callCOmputeLoopShorter·p1.00           300  sample          1660928.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop                                            50  sample  706205     1350.561 ± 21.361   ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.00                  50  sample              419.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.50                  50  sample             1396.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.90                  50  sample             1466.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.95                  50  sample             1466.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.99                  50  sample             1956.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.999                 50  sample            11376.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.9999                50  sample            18232.282            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p1.00                  50  sample          1589248.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop                                           100  sample  730752     1550.547 ± 26.205   ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.00                 100  sample              419.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.50                 100  sample             1466.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.90                 100  sample             1884.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.95                 100  sample             1886.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.99                 100  sample             2444.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.999                100  sample            11792.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.9999               100  sample            21329.542            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p1.00                 100  sample          1644544.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop                                           200  sample  743401     2002.902 ± 34.050   ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.00                 200  sample              419.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.50                 200  sample             1886.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.90                 200  sample             1956.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.95                 200  sample             2372.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.99                 200  sample             3352.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.999                200  sample            13616.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.9999               200  sample            27571.795            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p1.00                 200  sample          1562624.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop                                           250  sample  609549     2218.300 ± 48.985   ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.00                 250  sample              489.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.50                 250  sample             1954.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.90                 250  sample             2372.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.95                 250  sample             2444.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.99                 250  sample             3840.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.999                250  sample            14512.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.9999               250  sample            45189.440            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p1.00                 250  sample          1902592.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop                                           300  sample  512924     2455.670 ± 66.793   ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.00                 300  sample              838.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.50                 300  sample             2372.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.90                 300  sample             2444.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.95                 300  sample             2860.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.99                 300  sample             4328.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.999                300  sample            14944.000            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p0.9999               300  sample           988989.440            ns/op
+BasicSamplesBenchmark.callComputeWithLoop:callComputeWithLoop·p1.00                 300  sample          1865728.000            ns/op
+
+Process finished with exit code 0
