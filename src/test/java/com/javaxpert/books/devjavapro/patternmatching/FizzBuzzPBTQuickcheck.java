@@ -8,6 +8,7 @@ import static org.junit.Assume.*;
 
 import static org.hamcrest.Matchers.*;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 
 /**
@@ -17,8 +18,7 @@ import org.junit.runner.RunWith;
 public class FizzBuzzPBTQuickcheck {
     private FizzBuzz fizzbuzz = new FizzBuzz();
 
-    @Property(trials=100000
-    )
+    @Property(trials=100000)
     public void ensureDividableBy3IntsStartsWithFizz(Integer value){
         assumeThat( value, greaterThan(0));
         assumeThat( value%3,equalTo(0) );

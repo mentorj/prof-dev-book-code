@@ -57,4 +57,29 @@ public class SimpleLoops {
         }
         return sum;
     }
+
+    public static void main(String[] args) {
+        int result=-1;
+        long start,stop;
+        SimpleLoops loop = new SimpleLoops();
+        start  = System.currentTimeMillis();
+        result= loop.computeWithSingleLoop();
+        stop= System.currentTimeMillis();
+        System.out.println("Computation with simpleLoop");
+        System.out.println("Result is =" + result + " computed  in " + (stop-start) + " ms");
+
+        start  = System.currentTimeMillis();
+        result= loop.computeWithReduce();
+        stop= System.currentTimeMillis();
+        System.out.println("Computation with reduce");
+        System.out.println("Result is =" + result + " computed  in " + (stop-start) + " ms");
+
+
+        start  = System.currentTimeMillis();
+        result= loop.computeWith2Loops();
+        stop= System.currentTimeMillis();
+        System.out.println("Computation with 2 loops");
+        System.out.println("Result is =" + result + " computed  in " + (stop-start) + " ms");
+
+    }
 }
