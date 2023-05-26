@@ -1,7 +1,5 @@
 package com.javaxpert.books.devjavapro.patternmatching.deconstruct;
 import static io.vavr.API.*;
-import static io.vavr.Patterns.*;
-import static io.vavr.Predicates.*;
 
 public class DestructuringWithVavr {
 
